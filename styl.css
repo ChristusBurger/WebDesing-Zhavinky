@@ -1,0 +1,164 @@
+/*@import url("reset.css");*/
+
+head {
+  margin: 10em;
+  padding: 10em;
+  }
+  
+body {
+  background-color: whitesmoke;
+  color: rgb(49, 49, 49);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: whitesmoke; 
+}
+
+#redHead
+{
+  color: rgb(49, 49, 49);
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.flexContainer {
+  width: 95%;
+  margin: auto;
+  padding: 1%;
+  overflow: hidden;
+  display: inline-flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.button {
+  color: #fff;
+  border: none;
+  background-color: #333;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+.button:hover {
+  background: #ffc764;
+  color: #333;
+}
+
+.block {
+  text-align: center;
+  padding: 1%;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flex > * {
+  flex: 1 1 350px;
+}
+
+
+#mainHeader {
+  background-color: #ffc764;
+  font-style: italic;
+  font-weight: 400;
+}
+
+#mainHeader h1 {
+  font-size: 6vh;
+}
+
+
+#search input {
+  float: right;
+  margin-left: 10px;
+}
+
+input[type='text']:focus {
+  border: 2px solid #555;
+}
+
+#navbar {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+#navbar ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-grow: 1;
+}
+
+#navbar li {
+  flex: 1 1 10em;
+}
+
+#navbar .button {
+  display: block;
+}
+
+.block img {
+  display: block;
+  width: 100%;
+}
+
+.block .button {
+  float: right;
+}
+
+#social {
+  position: fixed;
+  bottom: 15%;
+}
+
+#social ul {
+  list-style: none;
+  padding-left: 1px;
+}
+
+#social a {
+  background-repeat: no-repeat;
+  width: 11px;
+  height: 21px;
+  float: left;
+  background-size: 40px 40px;
+  text-indent: -9999px;
+  border-radius: 10px;
+}
+
+#facebook {
+  background-image: url(/images/facebook.png);
+}
+
+#instagram {
+  background-image: url(/images/instagram.png);
+}
+
+#twitter {
+  background-image: url(/images/twitter.png);
+}
+
+#footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
