@@ -1,14 +1,14 @@
 /*@import url("reset.css");*/
 :root {
-  --grey: rgb(49, 49, 49);;
+  --grey: rgb(49, 49, 49);
   --orange: #ffc764;
 }
 
 head {
   margin: 10em;
   padding: 10em;
-  }
-  
+}
+
 body {
   background-color: whitesmoke;
   color: var(--grey);
@@ -23,20 +23,18 @@ a {
 }
 
 a:visited {
-  color: whitesmoke; 
+  color: whitesmoke;
 }
 
-#refHead
-{
-    color: var(--grey);
-
+#refHead {
+  color: var(--grey);
 }
 
-.container {
+/* .continer {
   width: 95%;
   margin: auto;
   overflow: hidden;
-}
+}*/
 
 .flexContainer {
   width: 95%;
@@ -51,14 +49,14 @@ a:visited {
 .button {
   color: #fff;
   border: none;
-  background-color: #333;
+  background-color: var(--grey);
   text-decoration: none;
   padding: 10px 15px;
 }
 
 .button:hover {
   background: var(--orange);
-  color: #333;
+  color:var(--grey);
 }
 
 .block {
@@ -66,7 +64,7 @@ a:visited {
   padding: 1%;
 }
 
-.flex {
+/*.flex {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -74,8 +72,7 @@ a:visited {
 
 .flex > * {
   flex: 1 1 350px;
-}
-
+}*/
 
 #mainHeader {
   background-color: var(--orange);
@@ -87,18 +84,16 @@ a:visited {
   font-size: 6vh;
 }
 
-
 #search input {
   float: right;
-  margin-left: 10px;
 }
 
-input[type='text']:focus {
-  border: 2px solid #555;
+input[type="text"]:focus {
+  border: 2px solid var(--grey);
 }
 
 #navbar {
-  background-color: #333;
+  background-color: var(--grey);
   color: #fff;
   text-align: center;
 }
@@ -161,7 +156,7 @@ input[type='text']:focus {
 }
 
 #footer {
-  background-color: #333;
+  background-color:var(--grey);
   color: white;
   text-align: center;
   padding: 20px;
