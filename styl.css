@@ -1,34 +1,36 @@
 /*@import url("reset.css");*/
+
 :root {
-  --grey: rgb(49, 49, 49);
-  --orange: #ffc764;
+    --grey: rgb(49, 49, 49);
+    --orange: #ffc764;
 }
 
 head {
-  margin: 10em;
-  padding: 10em;
+    margin: 10em;
+    padding: 10em;
 }
 
 body {
-  background-color: whitesmoke;
-  color: var(--grey);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  line-height: 1.6em;
-  margin: 0;
+    background-color: whitesmoke;
+    color: var(--grey);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 a:visited {
-  color: whitesmoke;
+    color: whitesmoke;
 }
 
 #refHead {
-  color: var(--grey);
+    color: var(--grey);
 }
+
 
 /* .continer {
   width: 95%;
@@ -37,128 +39,136 @@ a:visited {
 }*/
 
 .flexContainer {
-  width: 95%;
-  margin: auto;
-  padding: 1%;
-  overflow: hidden;
-  display: inline-flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+    width: 95%;
+    margin: auto;
+    padding: 1%;
+    overflow: hidden;
+    display: inline-flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .button {
-  color: #fff;
-  border: none;
-  background-color: var(--grey);
-  text-decoration: none;
-  padding: 10px 15px;
+    color: #fff;
+    border: none;
+    background-color: var(--grey);
+    text-decoration: none;
+    padding: 10px 15px;
 }
 
 .button:hover {
-  background: var(--orange);
-  color:var(--grey);
+    background: var(--orange);
+    color: var(--grey);
 }
 
 .block {
-  text-align: center;
-  padding: 1%;
+    text-align: center;
+    padding: 1%;
 }
 
 .flex {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.flex > * {
-  flex: 1 1 350px;
+.flex>* {
+    flex: 1 1 350px;
 }
 
 #mainHeader {
-  background-color: var(--orange);
-  font-style: italic;
-  font-weight: 400;
+    background-color: var(--orange);
+    font-style: italic;
+    font-weight: 400;
 }
 
 #mainHeader h1 {
-  font-size: 6vh;
+    font-size: 6vh;
 }
 
 #search input {
-  float: right;
+    float: right;
 }
 
 input[type="text"]:focus {
-  border: 2px solid var(--grey);
+    border: 2px solid var(--grey);
 }
 
 #navbar {
-  background-color: var(--grey);
-  color: #fff;
-  text-align: center;
+    background-color: var(--grey);
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
+
 #navbar ul {
-  padding: 0;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  flex-grow: 1;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-grow: 1;
 }
 
 #navbar li {
-  flex: 1 1 10em;
+    flex: 1 1 10em;
 }
 
 #navbar .button {
-  display: block;
+    display: block;
 }
 
 .block img {
-  display: block;
-  width: 100%;
+    display: block;
+    width: 100%;
 }
 
 .block .button {
-  float: right;
+    float: right;
 }
 
 #social {
-  position: fixed;
-  bottom: 15%;
+    position: fixed;
+    bottom: 15%;
 }
 
 #social ul {
-  list-style: none;
-  padding-left: 1px;
+    list-style: none;
+    padding-left: 1px;
 }
 
 #social a {
-  background-repeat: no-repeat;
-  width: 11px;
-  height: 21px;
-  float: left;
-  background-size: 40px 40px;
-  text-indent: -9999px;
-  border-radius: 10px;
+    background-repeat: no-repeat;
+    width: 11px;
+    height: 21px;
+    float: left;
+    background-size: 40px 40px;
+    text-indent: -9999px;
+    border-radius: 10px;
 }
 
 #facebook {
-  background-image: url(/images/facebook.png);
+    background-image: url(/images/facebook.png);
 }
 
 #instagram {
-  background-image: url(/images/instagram.png);
+    background-image: url(/images/instagram.png);
 }
 
 #twitter {
-  background-image: url(/images/twitter.png);
+    background-image: url(/images/twitter.png);
 }
 
 #footer {
-  background-color:var(--grey);
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
+    background-color: var(--grey);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.move {
+    margin: 77px auto 0px auto;
 }
