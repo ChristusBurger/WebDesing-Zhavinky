@@ -14,7 +14,7 @@ body {
     background-color: whitesmoke;
     color: var(--grey);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.6em;
     margin: 0;
 }
@@ -95,7 +95,7 @@ input[type="text"]:focus {
 }
 
 #navbar {
-  overflow: hidden;
+    overflow: hidden;
     background-color: var(--grey);
     color: #fff;
     text-align: center;
@@ -167,12 +167,13 @@ input[type="text"]:focus {
     padding: 20px;
     margin-top: 40px;
 }
+
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
 }
 
-.sticky + .content {
-  padding-top: 60mpx;
+.sticky+.content {
+    padding-top: 60mpx;
 }
