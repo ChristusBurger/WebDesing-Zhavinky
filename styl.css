@@ -115,7 +115,7 @@ input[type="text"]:focus {
     flex: 1 1 10em;
 }
 
-#navbar .button {
+.navbar__button {
     display: block;
 }
 
