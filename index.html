@@ -16,7 +16,6 @@
 </head>
 
 <body>
-    <div class="move">
         <header id="mainHeader">
             <div class="flexContainer">
                 <div id="textHeader">
@@ -97,7 +96,7 @@
                 <a class="button" href="#">číst dále...</a>
             </article>
         </section>
-    </div>
+    
 
     <aside id="social">
         <ul>
@@ -110,6 +109,22 @@
     <footer id="footer">
         &copy; 2021 by Matěj Tvrzník, Martin Ševčík, Jan Vavrek
     </footer>
+
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        </script>
+    
 </body>
 
 </html>

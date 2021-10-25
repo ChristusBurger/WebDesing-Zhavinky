@@ -172,3 +172,14 @@ input[type="text"]:focus {
 .move {
     margin: 77px auto 0px auto;
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
