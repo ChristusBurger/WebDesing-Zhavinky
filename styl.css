@@ -174,12 +174,7 @@ input[type="text"]:focus {
 }
 
 .sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
