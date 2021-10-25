@@ -174,5 +174,5 @@ input[type="text"]:focus {
 }
 
 .sticky + .content {
-  padding-top: 60mpx;
+  padding-top: 60em;
 }
