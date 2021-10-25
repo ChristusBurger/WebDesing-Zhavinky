@@ -95,11 +95,10 @@ input[type="text"]:focus {
 }
 
 #navbar {
+  overflow: hidden;
     background-color: var(--grey);
     color: #fff;
     text-align: center;
-    position: fixed;
-    top: 0;
     width: 100%;
 }
 
@@ -168,11 +167,6 @@ input[type="text"]:focus {
     padding: 20px;
     margin-top: 40px;
 }
-
-.move {
-    margin: 77px auto 0px auto;
-}
-
 .sticky {
     position: fixed;
     top: 0;
@@ -180,5 +174,5 @@ input[type="text"]:focus {
 }
 
 .sticky + .content {
-  padding-top: 60px;
+  padding-top: 60mpx;
 }
