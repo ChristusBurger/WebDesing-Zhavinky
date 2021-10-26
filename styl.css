@@ -31,12 +31,6 @@ a:visited {
   color: var(--grey);
 }
 
-/* .continer {
-  width: 95%;
-  margin: auto;
-  overflow: hidden;
-}*/
-
 .flexContainer {
   width: 95%;
   margin: auto;
@@ -46,7 +40,7 @@ a:visited {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
+.block__button,
 .social__button,
 .navbar__button,
 .search__button {
@@ -57,8 +51,9 @@ a:visited {
   padding: 10px 15px;
 }
 
+.block__button:hover,
 .social__button:hover,
-.button:hover,
+.search__button:hover,
 .navbar__button:hover,
 .search__button:hover {
   background: var(--orange);
@@ -90,7 +85,8 @@ a:visited {
   font-size: 6vh;
 }
 
-#search input {
+.search__button,
+.block__button {
   float: right;
 }
 
