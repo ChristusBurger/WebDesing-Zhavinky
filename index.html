@@ -136,8 +136,8 @@
         stickyNavBar();
       };
 
-      var navbar = document.getElementById("navbar");
-      var sticky = navbar.offsetTop;
+      let navbar = document.getElementById("navbar");
+      let sticky = navbar.offsetTop;
 
       function stickyNavBar() {
         if (window.pageYOffset >= sticky) {
@@ -148,7 +148,7 @@
       }
 
       function hamburger() {
-        var x = document.getElementById("myLinks");
+        let x = document.getElementById("myLinks");
         if (x.style.display === "block") {
           x.style.display = "none";
         } else {
