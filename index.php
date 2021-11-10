@@ -42,9 +42,10 @@
           </form>
         </div>
       </div>
-      <nav class="navbar" id="navbar">
-        <a href="index.html" class="active">Nejžhavější</a>
+      <nav class="navbar navbarFlex" id="navbar">
+        
         <div id="myLinks">
+        <a href="index.html" class="active">Nejžhavější</a>
           <a class="navbar__buttons" href="zDomova.html">Z domova</a>
           <a class="navbar__buttons" href="politika.html">Politika</a>
           <a class="navbar__buttons" href="kontakty.html">Kontakty</a>
@@ -56,7 +57,7 @@
     </header>
     <section class="flex">
       <article class="block">
-        <img src="/images/london.jpg" alt="london" />
+        <img src="images/london.jpg" alt="london" />
 
         <h2>Za výbuch ve Vrběticích může Kalousek</h2>
 
@@ -69,7 +70,7 @@
         <a class="block__button" href="detailClanku.html">číst dále...</a>
       </article>
       <article class="block">
-        <img src="/images/prague1.jpg" alt="prague" />
+        <img src="images/prague1.jpg" alt="prague" />
 
         <h2>Informatici protestují proti Lorem ipsum</h2>
 
