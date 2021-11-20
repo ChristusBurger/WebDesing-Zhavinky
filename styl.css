@@ -58,7 +58,7 @@ body {
     padding: 10px;
 }
 
-.block__input {
+.form__input {
     margin-right: 10px;
 }
 
@@ -88,10 +88,11 @@ a:visited {
     flex-wrap: wrap;
 }
 
-.block__button,
+.form__button,
 .social__button,
 .navbar__button,
-.search__button {
+.search__button,
+.block__button {
     color: #fff;
     border: none;
     background-color: var(--grey);
@@ -99,17 +100,21 @@ a:visited {
     padding: 10px 15px;
 }
 
-.block__button:hover,
+.form__button:hover,
 .social__button:hover,
 .search__button:hover,
-.navbar__button:hover {
+.navbar__button:hover,
+.block__button:hover {
     background: var(--orange);
     color: var(--grey);
 }
 
 .block {
-    text-align: center;
     padding: 1%;
+}
+
+.block__figcaption {
+    text-align: center;
 }
 
 .flex {
@@ -133,7 +138,7 @@ a:visited {
 }
 
 .search__button,
-.block__button {
+.form__button {
     float: right;
 }
 
@@ -175,7 +180,8 @@ input[type="text"]:focus {
     width: 100%;
 }
 
-.block .button .navbar__button {
+.navbar__button,
+.block__button {
     float: right;
 }
 
@@ -294,6 +300,44 @@ input[type="text"]:focus {
 .block__title {
     text-align: left;
     font-size: 1.5rem;
+}
+
+.container {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.form__label,
+.form__input,
+.form__button {
+    width: 100%;
+    margin-top: 0;
+}
+
+.form__button {
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 600px) {
+    .form__label {
+        width: 25%;
+        margin-top: 6px;
+        display: inline-block;
+    }
+    .form__input {
+        float: left;
+        width: 75%;
+        margin-top: 6px;
+    }
+    .form__button {
+        padding: 12px 20px;
+        float: right;
+    }
+    .form__input,
+    .form__button {
+        width: 100%;
+        padding: 12px;
+    }
 }
 
 @media screen and (min-width: 600px) {

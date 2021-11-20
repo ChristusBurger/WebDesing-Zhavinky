@@ -48,7 +48,7 @@
             </p>
             <figure>
                 <img class="block__image" src="images/london.jpg" alt="london" />
-                <figcaption>Londýn | Foto: Hedvislava Přizdihřibová</figcaption>
+                <figcaption class="block__figcaption">Londýn | Foto: Hedvislava Přizdihřibová</figcaption>
             </figure>
             <p class="block__paragraph">„Pokud by (a to si velmi nepřeji) Piráti hlasovali proti vstupu do vlády, tak se nejedná o nějakou zradu ze strany STAN. Měli bychom tady situaci, kdy orgány dvou koaličních stran mají rozdílný názor na stěžejní rozhodnutí celé koalice. To
                 je demokracie, nikoliv podvod,” uvedl Rakušan. Rakušan si podle svých slov neumí představit, že by hnutí STAN za stávající situace do vlády nešlo a „selhalo”.
@@ -87,12 +87,18 @@
     <h2 class="secondTitle">Komentáře:</h2>
     <section class="flex">
         <article class="block">
-            <form class="block__form">
-                <label>Jméno:</label>
-                <input class="block__input" type="text">
-                <label>Komentář:</label>
-                <input class="block__input" type="text">
-                <input class="block__button" type="button" name="submit" value="Zveřejnit komentář">
+            <form class="block__form container">
+                <div class="form__row">
+                    <label class="form__label">Jméno:</label>
+                    <input class="form__input" type="text">
+                </div>
+                <div>
+                    <label class="form__label">Komentář:</label>
+                    <input class="form__input" type="text">
+                </div>
+                <div>
+                    <input class="form__button" type="button" name="submit" value="Zveřejnit komentář">
+                </div>
             </form>
             <table class="block__table">
                 <tr class="block__tr">
