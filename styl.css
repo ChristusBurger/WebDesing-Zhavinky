@@ -37,12 +37,43 @@ body {
     width: 100%;
     text-align: left;
     border-collapse: collapse;
-    margin: 10px;
+    margin: 15px;
+}
+
+.flex__table {
+    border-bottom: 2px solid gray;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    margin: 15px;
 }
 
 .block__td {
     border: 1px solid #aaaaaa;
     padding: 3px 2px 0 10px;
+}
+
+.flex__div {
+    flex-wrap: wrap;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.flex__td {
+    border: 1px;
+    padding: 3px 2px 0 10px;
+    height: 100px;
+    width: calc(100% / 2);
+    text-align: right;
+}
+
+.flex__td:first-child {
+    text-align: left;
+}
+
+.flex__p {
+    font-size: 1.5rem;
+    text-align: left;
 }
 
 .block__th {
@@ -64,6 +95,14 @@ body {
 
 h2 {
     text-align: left;
+}
+
+.article__title {
+    text-align: center;
+}
+
+.article__image {
+    text-align: center;
 }
 
 a {
@@ -88,6 +127,7 @@ a:visited {
     flex-wrap: wrap;
 }
 
+.flex__button,
 .form__button,
 .social__button,
 .navbar__button,
@@ -100,6 +140,7 @@ a:visited {
     padding: 10px 15px;
 }
 
+.flex__button:hover,
 .form__button:hover,
 .social__button:hover,
 .search__button:hover,
@@ -175,7 +216,17 @@ input[type="text"]:focus {
     display: block;
 }
 
+.block__smallImage {
+    height: 50px;
+    width: 50px;
+}
+
 .block img {
+    display: block;
+    width: 100%;
+}
+
+.flex__div {
     display: block;
     width: 100%;
 }
@@ -244,18 +295,9 @@ input[type="text"]:focus {
     display: none;
 }
 
-
-/* Style the navigation menu */
-
-
-/* Hide the links inside the navigation menu (except for logo/home) */
-
 .navbar #myLinks {
     display: none;
 }
-
-
-/* Style navigation menu links */
 
 .navbar a {
     color: white;
@@ -264,9 +306,6 @@ input[type="text"]:focus {
     font-size: 17px;
     display: block;
 }
-
-
-/* Style the hamburger menu */
 
 .navbar a.icon {
     background: var(--grey);
@@ -277,20 +316,15 @@ input[type="text"]:focus {
     min-height: 10px;
 }
 
-
-/* Add a grey background color on mouse-over */
-
 .navbar a:hover {
     background-color: var(--orange);
     color: var(--grey);
 }
 
-
-/* Style the active link (or home/logo) */
-
 .active {
     background-color: var(--grey);
     color: white;
+    font-weight: bold;
 }
 
 .block__paragraph {
@@ -317,6 +351,40 @@ input[type="text"]:focus {
 .form__button {
     margin-top: 10px;
 }
+
+
+/*.layout__navbar,
+.layout__footer {
+    min-height: 60px;
+}
+
+.layout__content,
+.layout__ads {
+    min-height: 300px;
+}*/
+
+
+/*@media screen and (min-width: 600px) {
+    .layout {
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        grid-template-rows: 60px repeat(2, auto) 60px;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    .layout__navbar {
+        grid-area: 1 / 1 / 2 / 4;
+    }
+    .layout__content {
+        grid-area: 2 / 1 / 4 / 3;
+    }
+    .layout__ads {
+        grid-area: 2 / 3 / 4 / 4;
+    }
+    .layout__footer {
+        grid-area: 4 / 1 / 5 / 4;
+    }
+}*/
 
 @media screen and (min-width: 600px) {
     .form__label {
@@ -356,26 +424,3 @@ input[type="text"]:focus {
         justify-content: space-between;
     }
 }
-
-
-/*@media screen and (min-width: 1117px) {
-    .container {
-        display: grid;
-        grid-template-columns: 186px 186px 186px 186px 186px 186px;
-        grid-template-rows: 120px auto auto 60px;
-        gap: 0px 0px;
-        grid-template-areas: "layout__header layout__header layout__header layout__header layout__header layout__header" "layout__content1 layout__content1 layout__content1 layout__content1 layout__content1 layout__content1" "layout__content2 layout__content2 layout__content2 layout__content2 layout__content2 layout__content2" "layout__footer layout__footer layout__footer layout__footer layout__footer layout__footer";
-    }
-    .layout__header {
-        grid-area: layout__header;
-    }
-    .layout__content1 {
-        grid-area: layout__content1;
-    }
-    .layout__content2 {
-        grid-area: layout__content2;
-    }
-    .layout__footer {
-        grid-area: layout__footer;
-    }
-}*/

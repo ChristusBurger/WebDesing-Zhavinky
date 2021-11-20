@@ -11,37 +11,49 @@
 </head>
 
 <body>
-    <header id="mainHeader">
-        <div class="layout__header">
-            <div class="flexContainer">
-                <div id="textHeader">
-                    <a id="refHead" href="index.html">
-                        <h1>Žhavinky</h1>
-                    </a>
-                    <p>...veškeré ožehavé novinky na jednom míště</p>
-                </div>
-            </div>
-            <nav class="navbar navbarFlex" id="navbar">
-                <a href="javascript:void(0);" class="icon" onclick="hamburger()">
-                    <i class="fa fa-bars"></i>
-                </a>
-                <div id="myLinks">
-                    <a class="navbar__button" href="index.html">Nejžhavější</a>
-                    <a class="navbar__button" href="zDomova.html">Z domova</a>
-                    <a class="navbar__button" href="politika.html">Politika</a>
-                    <a class="navbar__button active" href="kontakty.html">Kontakty</a>
-                    <div id="search">
-                        <form action="search.html">
-                            <input type="text" name="jmeno" placeholder="Hledat" />
-                        </form>
+    <div class="layout">
+        <div class="layout__navbar">
+            <header id="mainHeader">
+                <div class="flexContainer">
+                    <div id="textHeader">
+                        <a id="refHead" href="index.html">
+                            <h1>Žhavinky</h1>
+                        </a>
+                        <p>...veškeré ožehavé novinky na jednom míště</p>
                     </div>
                 </div>
-            </nav>
+                <nav class="navbar navbarFlex" id="navbar">
+                    <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <div id="myLinks">
+                        <a class="navbar__button" href="index.html">Nejžhavější</a>
+                        <a class="navbar__button" href="zDomova.html">Z domova</a>
+                        <a class="navbar__button" href="pocasi.html">Počasí</a>
+                        <a class="navbar__button active" href="kontakty.html">Kontakty</a>
+                        <div id="search">
+                            <form action="search.html">
+                                <input type="text" name="jmeno" placeholder="Hledat" />
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+
+            </header>
         </div>
-    </header>
-
-    <p>TODO: zde budou kontakty</p>
-
+        <div class="layout__content">
+            <p>KONTAKTY</p>
+        </div>
+        <div class="layout__ads">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi dolorum culpa nobis amet reprehenderit repellendus sapiente eligendi, repellat ad ullam delectus nostrum, earum rerum sit fugiat alias adipisci in voluptate aut dolor. Odit eveniet
+                rerum aspernatur. Reprehenderit amet officia impedit, quam dolorum, molestias ipsam porro corporis eveniet aliquid, consectetur repudiandae!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id vitae cumque a numquam magni beatae. At incidunt aperiam voluptatem tempore quos consequatur nesciunt inventore et illo, consectetur fugit odio? Corporis sit ab rem. Natus expedita
+                atque deserunt voluptate molestiae debitis sequi, quaerat ipsam officiis vel facere blanditiis, exercitationem enim minima!</p>
+        </div>
+        <div class="layout__footer">
+            <footer id='footer'>&copy; 2021 by Matěj Tvrzník, Martin Ševčík, Jan Vavrek</footer>
+        </div>
+    </div>
     <aside id="social">
         <ul>
             <li><a class="social__button" id="facebook" href="#">Facebook</a></li>
@@ -49,9 +61,6 @@
             <li><a class="social__button" id="twitter" href="#">Twitter</a></li>
         </ul>
     </aside>
-
-    <footer id='footer'>&copy; 2021 by Matěj Tvrzník, Martin Ševčík, Jan Vavrek</footer>
-
     <script>
         window.onscroll = function() {
             stickyNavBar();
