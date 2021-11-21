@@ -340,6 +340,15 @@ input[type="text"]:focus {
     border-radius: 5px;
     padding: 20px;
 }
+.contact{
+    padding-left: 20px;
+}
+.contact h2{
+    font-size: medium;
+}
+.contact h1{
+    padding-top: 50px;
+}
 
 .form__label,
 .form__input,
@@ -351,7 +360,25 @@ input[type="text"]:focus {
 .form__button {
     margin-top: 10px;
 }
-
+ /*pokus s gridem*/
+@media screen and (min-width: 600px) {
+    .layout {
+        display: grid; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 33.33% 33.33% 33.33%; 
+    grid-template-rows: 25% 25% 25% 25%; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        "layout__navbar layout__navbar layout__navbar"
+        "layout__content layout__content layout__ads"
+        "layout__content layout__content layout__ads"
+        "layout__footer layout__footer layout__footer"; 
+    }
+    .layout__navbar { grid-area: layout__navbar; }
+    .layout__content { grid-area: layout__content; }
+    .layout__footer { grid-area: layout__footer; }
+    .layout__ads { grid-area: layout__ads; }
+}    
 
 /*.layout__navbar,
 .layout__footer {
