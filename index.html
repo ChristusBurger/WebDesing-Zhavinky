@@ -1,135 +1,147 @@
-<!--TODO 
-    Pridat search do navbaru
-    v pravo, mobile view hamburger menu v pravo v navbaru
-    -->
 <!DOCTYPE html>
 <html lang="cs">
-
-<head>
+  <head>
     <title>Žhavinky</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="styl.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2964/2964063.png" />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/512/2964/2964063.png"
+    />
+  </head>
 
-<body>
-
+  <body>
     <header id="mainHeader">
-
-        <div class="flexContainer">
-            <div id="textHeader">
-                <a id="refHead" href="index.html">
-                    <h1>Žhavinky</h1>
-                </a>
-                <p>...veškeré ožehavé novinky na jednom míště</p>
-            </div>
+      <div class="flexContainer">
+        <div id="textHeader">
+          <a id="refHead" href="index.html">
+            <h1 id="mainHeader__h1">Žhavinky</h1>
+          </a>
+          <p>...veškeré ožehavé novinky na jednom míště</p>
         </div>
-        <nav class="navbar navbarFlex" id="navbar">
-            <a href="javascript:void(0);" class="icon" onclick="hamburger()">
-                <i class="fa fa-bars"></i>
-            </a>
-            <div id="myLinks">
-                <a class="navbar__button active" href="index.html">Nejžhavější</a>
-                <a class="navbar__button" href="zDomova.html">Z domova</a>
-                <a class="navbar__button" href="pocasi.html">Počasí</a>
-                <a class="navbar__button" href="kontakty.html">Kontakty</a>
-                <div id="search">
-                    <form action="search.html">
-                        <input type="text" name="jmeno" placeholder="Hledat" />
-                    </form>
-                </div>
-            </div>
-        </nav>
-
+      </div>
+      <nav class="navbar navbarFlex" id="navbar">
+        <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <div id="myLinks">
+          <a class="navbar__button active" href="index.html">Nejžhavější</a>
+          <a class="navbar__button" href="zDomova.html">Z domova</a>
+          <a class="navbar__button" href="pocasi.html">Počasí</a>
+          <a class="navbar__button" href="kontakty.html">Kontakty</a>
+          <div id="search">
+            <form action="search.html">
+              <input type="text" name="jmeno" placeholder="Hledat" />
+            </form>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <section class="flex">
-        <article class="block">
-            <img src="images/london.jpg" alt="london" />
-            <h2>Za výbuch ve Vrběticích může Kalousek</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et repellendus reiciendis illo, unde dolores sunt tempore debitis perspiciatis nam minus eius consectetur fugit, asperiores sit? Ipsum aspernatur voluptatum aperiam obcaecati!
-            </p>
-            <a class="block__button" href="detailClanku.html">číst dále...</a>
-        </article>
-        <article class="block">
-            <img src="images/prague1.jpg" alt="prague" />
-            <h2>Informatici protestují proti Lorem ipsum</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et repellendus reiciendis illo, unde dolores sunt tempore debitis perspiciatis nam minus eius consectetur fugit, asperiores sit? Ipsum aspernatur voluptatum aperiam obcaecati!
-            </p>
-            <a class="block__button" href="detailClanku.html">číst dále...</a>
-        </article>
-        <article class="block">
-            <img src="images/paris.jpg" alt="paris" />
-            <h2>Nová víra zaručující úspěšné zkouškové</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et repellendus reiciendis illo, unde dolores sunt tempore debitis perspiciatis nam minus eius consectetur fugit, asperiores sit? Ipsum aspernatur voluptatum aperiam obcaecati!
-            </p>
-            <a class="block__button" href="detailClanku.html">číst dále...</a>
-        </article>
+      <article class="block">
+        <img src="images/london.jpg" alt="london" />
+        <h2>Za výbuch ve Vrběticích může Kalousek</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+          repellendus reiciendis illo, unde dolores sunt tempore debitis
+          perspiciatis nam minus eius consectetur fugit, asperiores sit? Ipsum
+          aspernatur voluptatum aperiam obcaecati!
+        </p>
+        <a class="block__button" href="detailClanku.html">číst dále...</a>
+      </article>
+      <article class="block">
+        <img src="images/prague1.jpg" alt="prague" />
+        <h2>Informatici protestují proti Lorem ipsum</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+          repellendus reiciendis illo, unde dolores sunt tempore debitis
+          perspiciatis nam minus eius consectetur fugit, asperiores sit? Ipsum
+          aspernatur voluptatum aperiam obcaecati!
+        </p>
+        <a class="block__button" href="detailClanku.html">číst dále...</a>
+      </article>
+      <article class="block">
+        <img src="images/paris.jpg" alt="paris" />
+        <h2>Nová víra zaručující úspěšné zkouškové</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+          repellendus reiciendis illo, unde dolores sunt tempore debitis
+          perspiciatis nam minus eius consectetur fugit, asperiores sit? Ipsum
+          aspernatur voluptatum aperiam obcaecati!
+        </p>
+        <a class="block__button" href="detailClanku.html">číst dále...</a>
+      </article>
     </section>
     <section class="flex">
-        <article class="block">
-            <img src="images/london.jpg" alt="london" />
-            <h2>Tohle je moje první HTML stránka</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et repellendus reiciendis illo, unde dolores sunt tempore debitis perspiciatis nam minus eius consectetur fugit, asperiores sit? Ipsum aspernatur voluptatum aperiam obcaecati!
-            </p>
-            <a class="block__button" href="detailClanku.html">číst dále...</a>
-        </article>
-        <article class="block">
-            <img src="images/prague1.jpg" alt="prague" />
-            <h2>Všichni by už moc rádi na zahrádky</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et repellendus reiciendis illo, unde dolores sunt tempore debitis perspiciatis nam minus eius consectetur fugit, asperiores sit? Ipsum aspernatur voluptatum aperiam obcaecati!
-            </p>
-            <a class="block__button" href="detailClanku.html">číst dále...</a>
-        </article>
+      <article class="block">
+        <img src="images/london.jpg" alt="london" />
+        <h2>Tohle je moje první HTML stránka</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+          repellendus reiciendis illo, unde dolores sunt tempore debitis
+          perspiciatis nam minus eius consectetur fugit, asperiores sit? Ipsum
+          aspernatur voluptatum aperiam obcaecati!
+        </p>
+        <a class="block__button" href="detailClanku.html">číst dále...</a>
+      </article>
+      <article class="block">
+        <img src="images/prague1.jpg" alt="prague" />
+        <h2>Všichni by už moc rádi na zahrádky</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+          repellendus reiciendis illo, unde dolores sunt tempore debitis
+          perspiciatis nam minus eius consectetur fugit, asperiores sit? Ipsum
+          aspernatur voluptatum aperiam obcaecati!
+        </p>
+        <a class="block__button" href="detailClanku.html">číst dále...</a>
+      </article>
     </section>
 
     <aside id="social">
-        <ul>
-            <li><a class="social__button" id="facebook" href="#">Facebook</a></li>
-            <li><a class="social__button" id="instagram" href="#">Instagram</a></li>
-            <li><a class="social__button" id="twitter" href="#">Twitter</a></li>
-        </ul>
+      <ul>
+        <li><a class="social__button" id="facebook" href="#">Facebook</a></li>
+        <li><a class="social__button" id="instagram" href="#">Instagram</a></li>
+        <li><a class="social__button" id="twitter" href="#">Twitter</a></li>
+      </ul>
     </aside>
 
     <div class="layout__footer">
-        <footer id="footer">
-            &copy; 2021 by Matěj Tvrzník, Martin Ševčík, Jan Vavrek - student project
-        </footer>
+      <footer id="footer">
+        &copy; 2021 by Matěj Tvrzník, Martin Ševčík, Jan Vavrek - student
+        project
+      </footer>
     </div>
 
     <script>
-        window.onscroll = function() {
-            stickyNavBar();
-        };
+      window.onscroll = function () {
+        stickyNavBar();
+      };
 
-        let navbar = document.getElementById("navbar");
-        let sticky = navbar.offsetTop;
+      let navbar = document.getElementById("navbar");
+      let sticky = navbar.offsetTop;
 
-        function stickyNavBar() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky");
-            } else {
-                navbar.classList.remove("sticky");
-            }
+      function stickyNavBar() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
         }
+      }
 
-        function hamburger() {
-            let x = document.getElementById("myLinks");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
+      function hamburger() {
+        let x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
         }
+      }
     </script>
-
-</body>
-
+  </body>
 </html>

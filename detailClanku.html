@@ -1,173 +1,216 @@
 <!DOCTYPE html>
 <html lang="cs">
-
-<head>
+  <head>
     <title>Žhavinky</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="styl.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2964/2964063.png" />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/512/2964/2964063.png"
+    />
+  </head>
 
-<body>
+  <body>
     <header id="mainHeader">
-        <div class="layout__header">
-            <div class="flexContainer">
-                <div id="textHeader">
-                    <a id="refHead" href="index.html">
-                        <h1>Žhavinky</h1>
-                    </a>
-                    <p>...veškeré ožehavé novinky na jednom míště</p>
-                </div>
-            </div>
-            <nav class="navbar navbarFlex" id="navbar">
-                <a href="javascript:void(0);" class="icon" onclick="hamburger()">
-                    <i class="fa fa-bars"></i>
-                </a>
-                <div id="myLinks">
-                    <a class="navbar__button" href="index.html">Nejžhavější</a>
-                    <a class="navbar__button" href="zDomova.html">Z domova</a>
-                    <a class="navbar__button" href="pocasi.html">Počasí</a>
-                    <a class="navbar__button" href="kontakty.html">Kontakty</a>
-                    <div id="search">
-                        <form action="search.html">
-                            <input type="text" name="jmeno" placeholder="Hledat" />
-                        </form>
-                    </div>
-                </div>
-            </nav>
+      <div class="layout__header">
+        <div class="flexContainer">
+          <div id="textHeader">
+            <a id="refHead" href="index.html">
+              <h1 id="mainHeader__h1">Žhavinky</h1>
+            </a>
+            <p>...veškeré ožehavé novinky na jednom míště</p>
+          </div>
         </div>
+        <nav class="navbar navbarFlex" id="navbar">
+          <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+            <i class="fa fa-bars"></i>
+          </a>
+          <div id="myLinks">
+            <a class="navbar__button" href="index.html">Nejžhavější</a>
+            <a class="navbar__button" href="zDomova.html">Z domova</a>
+            <a class="navbar__button" href="pocasi.html">Počasí</a>
+            <a class="navbar__button" href="kontakty.html">Kontakty</a>
+            <div id="search">
+              <form action="search.html">
+                <input type="text" name="jmeno" placeholder="Hledat" />
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
-    <section class="flex">
-        <article class="block">
-            <h1 class="block__title">Zrada to nebude, do vlády půjdeme i bez vás, vzkázal Rakušan Pirátům</h1>
-            <p class="block__paragraph">
-                Předseda hnutí STAN Vít Rakušan odmítá, že by účast hnutí ve vládě za situace, kdy by Piráti odmítli schválit koaliční smlouvu, byla zradou nebo porušením dohod. Rakušan to v neděli uvedl na sociálních sítích.
-            </p>
-            <figure>
-                <img class="block__image" src="images/london.jpg" alt="london" />
-                <figcaption class="block__figcaption">Londýn | Foto: Hedvislava Přizdihřibová</figcaption>
-            </figure>
-            <p class="block__paragraph">„Pokud by (a to si velmi nepřeji) Piráti hlasovali proti vstupu do vlády, tak se nejedná o nějakou zradu ze strany STAN. Měli bychom tady situaci, kdy orgány dvou koaličních stran mají rozdílný názor na stěžejní rozhodnutí celé koalice. To
-                je demokracie, nikoliv podvod,” uvedl Rakušan. Rakušan si podle svých slov neumí představit, že by hnutí STAN za stávající situace do vlády nešlo a „selhalo”.
-            </p>
-            <p class="block__paragraph">
-                „Pro voliče by bylo nepochopitelné, kdyby ve chvíli, kdy je možné vytvořit vládu demokratických stran s výraznou většinou, přišla politická krize,” uvedl a dodal, že nehodlá vracet do hry o vládu ANO a SPD, které skončily v opozici. Za podobně nesmyslný
-                model označil případnou menšinovou vládu koalice SPOLU (ODS, TOP 09, lidovci).
-            </p>
-            <p class="block__paragraph">
-                Někdy se říká 'když můžeš, tak musíš'. To je v tento moment i jednoznačný pohled STAN, který považuji za politicky prozíravý a dospělý,” uzavřel vzkaz koaličnímu partnerovi, s nímž hnutí kandidovalo v říjnových volbách.
-            </p>
-        </article>
+    <section class="flex container">
+      <article class="block">
+        <h1 class="block__title">
+          Zrada to nebude, do vlády půjdeme i bez vás, vzkázal Rakušan Pirátům
+        </h1>
+        <p class="block__paragraph">
+          Předseda hnutí STAN Vít Rakušan odmítá, že by účast hnutí ve vládě za
+          situace, kdy by Piráti odmítli schválit koaliční smlouvu, byla zradou
+          nebo porušením dohod. Rakušan to v neděli uvedl na sociálních sítích.
+        </p>
+        <figure>
+          <img class="block__image" src="images/london.jpg" alt="london" />
+          <figcaption class="block__figcaption">
+            Londýn | Foto: Hedvislava Přizdihřibová
+          </figcaption>
+        </figure>
+        <p class="block__paragraph">
+          „Pokud by (a to si velmi nepřeji) Piráti hlasovali proti vstupu do
+          vlády, tak se nejedná o nějakou zradu ze strany STAN. Měli bychom tady
+          situaci, kdy orgány dvou koaličních stran mají rozdílný názor na
+          stěžejní rozhodnutí celé koalice. To je demokracie, nikoliv podvod,”
+          uvedl Rakušan. Rakušan si podle svých slov neumí představit, že by
+          hnutí STAN za stávající situace do vlády nešlo a „selhalo”.
+        </p>
+        <p class="block__paragraph">
+          „Pro voliče by bylo nepochopitelné, kdyby ve chvíli, kdy je možné
+          vytvořit vládu demokratických stran s výraznou většinou, přišla
+          politická krize,” uvedl a dodal, že nehodlá vracet do hry o vládu ANO
+          a SPD, které skončily v opozici. Za podobně nesmyslný model označil
+          případnou menšinovou vládu koalice SPOLU (ODS, TOP 09, lidovci).
+        </p>
+        <p class="block__paragraph">
+          Někdy se říká 'když můžeš, tak musíš'. To je v tento moment i
+          jednoznačný pohled STAN, který považuji za politicky prozíravý a
+          dospělý,” uzavřel vzkaz koaličnímu partnerovi, s nímž hnutí
+          kandidovalo v říjnových volbách.
+        </p>
+      </article>
     </section>
 
-    <h2 class="secondTitle">Další články:</h2>
-    <section class="flex">
-
+    <section>
+      <h2 class="secondTitle">Další články:</h2>
+      <div class="flex">
         <article class="block">
-            <img class="block__image" src="images/paris.jpg" alt="london" />
-            <h2>Tohle je moje první HTML stránka</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et repellendus reiciendis illo, unde dolores sunt tempore debitis perspiciatis nam minus eius consectetur fugit, asperiores sit? Ipsum aspernatur voluptatum aperiam obcaecati!
-            </p>
-            <a class="block__button" href="#">číst dále...</a>
+          <img class="block__image" src="images/paris.jpg" alt="london" />
+          <h2>Tohle je moje první HTML stránka</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+            repellendus reiciendis illo, unde dolores sunt tempore debitis
+            perspiciatis nam minus eius consectetur fugit, asperiores sit? Ipsum
+            aspernatur voluptatum aperiam obcaecati!
+          </p>
+          <a class="block__button" href="#">číst dále...</a>
         </article>
         <article class="block">
-            <img class="block__image" src="images/prague1.jpg" alt="prague" />
-            <h2>Všichni by už moc rádi na zahrádky</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et repellendus reiciendis illo, unde dolores sunt tempore debitis perspiciatis nam minus eius consectetur fugit, asperiores sit? Ipsum aspernatur voluptatum aperiam obcaecati!
-            </p>
-            <a class="block__button" href="#">číst dále...</a>
+          <img class="block__image" src="images/prague1.jpg" alt="prague" />
+          <h2>Všichni by už moc rádi na zahrádky</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+            repellendus reiciendis illo, unde dolores sunt tempore debitis
+            perspiciatis nam minus eius consectetur fugit, asperiores sit? Ipsum
+            aspernatur voluptatum aperiam obcaecati!
+          </p>
+          <a class="block__button" href="#">číst dále...</a>
         </article>
+      </div>
     </section>
 
-    <h2 class="secondTitle">Komentáře:</h2>
-    <section class="flex">
+    <section>
+      <h2 class="secondTitle">Komentáře:</h2>
+      <div class="flex">
         <article class="block">
-            <form class="block__form container">
-                <div class="form__row">
-                    <label for="name" class="form__label">Jméno:</label>
-                    <input id="name" class="form__input" type="text">
-                </div>
-                <div>
-                    <label for="comment" class="form__label">Komentář:</label>
-                    <input id="comment" class="form__input" type="text">
-                </div>
-                <div>
-                    <input class="form__button" type="button" name="submit" value="Zveřejnit komentář">
-                </div>
-            </form>
-            <table class="block__table">
-                <tr class="block__tr">
-                    <th class="block__th">Autor:</th>
-                    <td class="block__td">Tomáš Babula</td>
-                </tr>
-                <tr class="block__tr">
-                    <th class="block__th">Komentář:</th>
-                    <td class="block__td">Já si jídlo nedávám, já jsem živ o pivu.</td>
-                </tr>
-            </table>
-            <table class="block__table">
-                <tr class="block__tr">
-                    <th class="block__th">Autor:</th>
-                    <td class="block__td">André Treveler</td>
-                </tr>
-                <tr class="block__tr">
-                    <th class="block__th">Komentář:</th>
-                    <td class="block__td">Co to smrdí? Počkej… Co to je? To je jsou tvarůžky! Olomócké tvaróžky!!!</td>
-                </tr>
-            </table>
-            <table class="block__table">
-                <tr class="block__tr">
-                    <th class="block__th">Autor:</th>
-                    <td class="block__td">Mr. Cemetery</td>
-                </tr>
-                <tr class="block__tr">
-                    <th class="block__th">Komentář:</th>
-                    <td class="block__td">I love you. I swear. Mít holku je hezký hřích.</td>
-                </tr>
-            </table>
+          <form class="block__form container">
+            <div class="form__row">
+              <label for="name" class="form__label">Jméno:</label>
+              <input id="name" class="form__input" type="text" />
+            </div>
+            <div>
+              <label for="comment" class="form__label">Komentář:</label>
+              <input id="comment" class="form__input" type="text" />
+            </div>
+            <div>
+              <input
+                class="form__button"
+                type="button"
+                name="submit"
+                value="Zveřejnit komentář"
+              />
+            </div>
+          </form>
+          <table class="block__table">
+            <tr class="block__tr">
+              <th class="block__th">Autor:</th>
+              <td class="block__td">Tomáš Babula</td>
+            </tr>
+            <tr class="block__tr">
+              <th class="block__th">Komentář:</th>
+              <td class="block__td">
+                Já si jídlo nedávám, já jsem živ o pivu.
+              </td>
+            </tr>
+          </table>
+          <table class="block__table">
+            <tr class="block__tr">
+              <th class="block__th">Autor:</th>
+              <td class="block__td">André Treveler</td>
+            </tr>
+            <tr class="block__tr">
+              <th class="block__th">Komentář:</th>
+              <td class="block__td">
+                Co to smrdí? Počkej… Co to je? To je jsou tvarůžky! Olomócké
+                tvaróžky!!!
+              </td>
+            </tr>
+          </table>
+          <table class="block__table">
+            <tr class="block__tr">
+              <th class="block__th">Autor:</th>
+              <td class="block__td">Mr. Cemetery</td>
+            </tr>
+            <tr class="block__tr">
+              <th class="block__th">Komentář:</th>
+              <td class="block__td">
+                I love you. I swear. Mít holku je hezký hřích.
+              </td>
+            </tr>
+          </table>
         </article>
-
+      </div>
     </section>
 
     <aside id="social">
-        <ul>
-            <li><a class="social__button" id="facebook" href="#">Facebook</a></li>
-            <li><a class="social__button" id="instagram" href="#">Instagram</a></li>
-            <li><a class="social__button" id="twitter" href="#">Twitter</a></li>
-        </ul>
+      <ul>
+        <li><a class="social__button" id="facebook" href="#">Facebook</a></li>
+        <li><a class="social__button" id="instagram" href="#">Instagram</a></li>
+        <li><a class="social__button" id="twitter" href="#">Twitter</a></li>
+      </ul>
     </aside>
 
-    <footer id='footer'>&copy; 2021 by Matěj Tvrzník, Martin Ševčík, Jan Vavrek - student project</footer>
+    <footer id="footer">
+      &copy; 2021 by Matěj Tvrzník, Martin Ševčík, Jan Vavrek - student project
+    </footer>
 
     <script>
-        window.onscroll = function() {
-            stickyNavBar();
-        };
+      window.onscroll = function () {
+        stickyNavBar();
+      };
 
-        let navbar = document.getElementById("navbar");
-        let sticky = navbar.offsetTop;
+      let navbar = document.getElementById("navbar");
+      let sticky = navbar.offsetTop;
 
-        function stickyNavBar() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky");
-            } else {
-                navbar.classList.remove("sticky");
-            }
+      function stickyNavBar() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
         }
+      }
 
-        function hamburger() {
-            let x = document.getElementById("myLinks");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
+      function hamburger() {
+        let x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
         }
+      }
     </script>
-</body>
-
+  </body>
 </html>

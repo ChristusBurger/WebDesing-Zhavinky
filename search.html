@@ -1,117 +1,136 @@
 <!DOCTYPE html>
 <html lang="cs">
-
-<head>
+  <head>
     <title>Žhavinky</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="styl.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2964/2964063.png" />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/512/2964/2964063.png"
+    />
+  </head>
 
-<body>
+  <body>
     <header id="mainHeader">
-        <div class="layout__header">
-            <div class="flexContainer">
-                <div id="textHeader">
-                    <a id="refHead" href="index.html">
-                        <h1>Žhavinky</h1>
-                    </a>
-                    <p>...veškeré ožehavé novinky na jednom míště</p>
-                </div>
-            </div>
-            <nav class="navbar navbarFlex" id="navbar">
-                <a href="javascript:void(0);" class="icon" onclick="hamburger()">
-                    <i class="fa fa-bars"></i>
-                </a>
-                <div id="myLinks">
-                    <a class="navbar__button" href="index.html">Nejžhavější</a>
-                    <a class="navbar__button" href="zDomova.html">Z domova</a>
-                    <a class="navbar__button" href="pocasi.html">Počasí</a>
-                    <a class="navbar__button" href="kontakty.html">Kontakty</a>
-                    <div id="search">
-                        <form action="search.html">
-                            <input type="text" name="jmeno" placeholder="Hledat" />
-                        </form>
-                    </div>
-                </div>
-            </nav>
+      <div class="layout__header">
+        <div class="flexContainer">
+          <div id="textHeader">
+            <a id="refHead" href="index.html">
+              <h1 id="mainHeader__h1">Žhavinky</h1>
+            </a>
+            <p>...veškeré ožehavé novinky na jednom míště</p>
+          </div>
         </div>
+        <nav class="navbar navbarFlex" id="navbar">
+          <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+            <i class="fa fa-bars"></i>
+          </a>
+          <div id="myLinks">
+            <a class="navbar__button" href="index.html">Nejžhavější</a>
+            <a class="navbar__button" href="zDomova.html">Z domova</a>
+            <a class="navbar__button" href="pocasi.html">Počasí</a>
+            <a class="navbar__button" href="kontakty.html">Kontakty</a>
+            <div id="search">
+              <form action="search.html">
+                <input type="text" name="jmeno" placeholder="Hledat" />
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
-    <h2 class="secondTitle">Nalezené výsledky:</h2>
-    <section class="flex">
+
+    <section>
+      <h2 class="secondTitle">Nalezené výsledky:</h2>
+      <div class="flex">
         <table class="flex__table">
-            <tr class="flex__tr">
-                <td class="flex__td">
-                    <p class="flex__p">Zrada to nebude, do vlády půjdeme i bez vás, vzkázal Rakušan Pirátům</p>
-                </td>
-                <td class="flex__td">
-                    <a class="flex__button" href="detailClanku.html">číst dále...</a>
-                </td>
-            </tr>
+          <tr class="flex__tr">
+            <td class="flex__td">
+              <p class="flex__p">
+                Zrada to nebude, do vlády půjdeme i bez vás, vzkázal Rakušan
+                Pirátům
+              </p>
+            </td>
+            <td class="flex__td">
+              <a class="flex__button" href="detailClanku.html">číst dále...</a>
+            </td>
+          </tr>
         </table>
+      </div>
     </section>
     <section class="flex">
-        <table class="flex__table">
-            <tr class="flex__tr">
-                <td class="flex__td">
-                    <p class="flex__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, optio.</p>
-                </td>
-                <td class="flex__td">
-                    <a class="flex__button" href="detailClanku.html">číst dále...</a>
-                </td>
-            </tr>
-        </table>
+      <table class="flex__table">
+        <tr class="flex__tr">
+          <td class="flex__td">
+            <p class="flex__p">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
+              optio.
+            </p>
+          </td>
+          <td class="flex__td">
+            <a class="flex__button" href="detailClanku.html">číst dále...</a>
+          </td>
+        </tr>
+      </table>
     </section>
     <section class="flex">
-        <table class="flex__table">
-            <tr class="flex__tr">
-                <td class="flex__td">
-                    <p class="flex__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque in eos illo error aliquid! Obcaecati eveniet doloremque enim fugiat libero.</p>
-                </td>
-                <td class="flex__td">
-                    <a class="flex__button" href="detailClanku.html">číst dále...</a>
-                </td>
-            </tr>
-        </table>
+      <table class="flex__table">
+        <tr class="flex__tr">
+          <td class="flex__td">
+            <p class="flex__p">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque in
+              eos illo error aliquid! Obcaecati eveniet doloremque enim fugiat
+              libero.
+            </p>
+          </td>
+          <td class="flex__td">
+            <a class="flex__button" href="detailClanku.html">číst dále...</a>
+          </td>
+        </tr>
+      </table>
     </section>
 
     <aside id="social">
-        <ul>
-            <li><a class="social__button" id="facebook" href="#">Facebook</a></li>
-            <li><a class="social__button" id="instagram" href="#">Instagram</a></li>
-            <li><a class="social__button" id="twitter" href="#">Twitter</a></li>
-        </ul>
+      <ul>
+        <li><a class="social__button" id="facebook" href="#">Facebook</a></li>
+        <li><a class="social__button" id="instagram" href="#">Instagram</a></li>
+        <li><a class="social__button" id="twitter" href="#">Twitter</a></li>
+      </ul>
     </aside>
 
-    <footer id='footer'>&copy; 2021 by Matěj Tvrzník, Martin Ševčík, Jan Vavrek - student project</footer>
+    <footer id="footer">
+      &copy; 2021 by Matěj Tvrzník, Martin Ševčík, Jan Vavrek - student project
+    </footer>
 
     <script>
-        window.onscroll = function() {
-            stickyNavBar();
-        };
+      window.onscroll = function () {
+        stickyNavBar();
+      };
 
-        let navbar = document.getElementById("navbar");
-        let sticky = navbar.offsetTop;
+      let navbar = document.getElementById("navbar");
+      let sticky = navbar.offsetTop;
 
-        function stickyNavBar() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky");
-            } else {
-                navbar.classList.remove("sticky");
-            }
+      function stickyNavBar() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
         }
+      }
 
-        function hamburger() {
-            let x = document.getElementById("myLinks");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
+      function hamburger() {
+        let x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
         }
+      }
     </script>
-</body>
-
+  </body>
 </html>
